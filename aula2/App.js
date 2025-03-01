@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Profile from './profile';
+import Profile from './Profile.js';
 // Ctrl + espaço
 
 const pessoas = [
-  {id:1, nome:'Nicolas', idade:20, email:'nicolas@gmail.com', img:'x'}
+  {id:1, nome:'Nicolas', idade:20, email:'nicolas@gmail.com', img:'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'},
+  {id:2, nome: 'Anderson', idade: 30, email:'anderson@gmail.com', img:'https://upload.wikimedia.org/wikipedia/commons/4/43/Cute_dog.jpg'}
 ]
 
 export default function App() {
