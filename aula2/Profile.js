@@ -1,17 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import imagem from './img/img1.png'
 
 export default function Profile(props) {
 // nome de arquivo mesmo nome da função e sempre a primeira letra maiúscula
   return (
     <View style={styles.container}>
-        <Image></Image>
-        <Text>Nome: {props.name}</Text>
+        <Image source={{uri: props.img}} style={{width:200, height: 200}}></Image>
+        <Text>Nome: {props.nome}</Text>
         <Text>Idade: {props.idade}</Text>
         <Text>Email: {props.email}</Text>
-        <Image source={{uri: props.img}} 
-        style={{width:200, height: 200}}></Image>
         <StatusBar style="auto" />
     </View>
   );
